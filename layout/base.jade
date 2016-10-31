@@ -34,7 +34,7 @@ html(lang='#{config.language}')
     link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
     if config.feed
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
-    script(src=root + '/js/mathjax.js')
+    script(src=url_for('js/mathjax.js'))
     script(src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG')
 
   body: .body_container
